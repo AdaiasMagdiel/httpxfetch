@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,windows
 
+# My files
+
+build.bat
+deploy_test.bat
+deploy_prod.bat
 main.py
 
 ### Python ###
