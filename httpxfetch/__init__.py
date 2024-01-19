@@ -1,6 +1,8 @@
 import httpx
 import json
 
+__version__ = '0.0.2'
+
 
 class JSON:
     @classmethod
