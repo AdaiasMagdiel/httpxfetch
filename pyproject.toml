@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "httpxfetch"
+dynamic = ["version", "dependencies"]
+authors = [
+  { name="Adaías Magdiel", email="eu@adaiasmagdiel.com" },
+]
+description = "httpxfetch is a Python wrapper for the JavaScript fetch function, designed to streamline the process of reverse engineering APIs."
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["fetch", "httpx", "reverse engineering", "JavaScript"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Utilities",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "httpxfetch.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/AdaiasMagdiel/httpxfetch"
+Issues = "https://github.com/AdaiasMagdiel/httpxfetch/issues"
