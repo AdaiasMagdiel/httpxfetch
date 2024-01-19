@@ -35,7 +35,7 @@ print(response.json())
 ## Usage
 
 ```python
-from fetch_to_httpx import fetch, JSON
+from httpxfetch import fetch, JSON
 
 # Example: Making a POST request with JSON payload
 url = 'https://api.example.com/data'
