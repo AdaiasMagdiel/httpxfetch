@@ -1,7 +1,7 @@
 import httpx
 import pytest
 import json
-from src import fetch, JSON
+from httpxfetch import fetch, JSON
 
 
 def test_fetch_is_working():
